@@ -50,7 +50,7 @@ jobs:
       run: |
         git clone https://user:$GH_TOKEN@github.com/${{vars.APP_GITOPS_REPO}}
 
-        cd sample-python-basic-gitops/environment/dev
+        cd python-basic-gitops/environment/dev
         git config user.name "ciuser"
         git config user.email "ciuser@gha.com"
 
@@ -84,7 +84,7 @@ jobs:
       
         git clone https://user:$GH_TOKEN@github.com/${{vars.APP_GITOPS_REPO}}
 
-        cd sample-python-basic-gitops/environment/staging
+        cd python-basic-gitops/environment/staging
         git config user.name "ciuser"
         git config user.email "ciuser@gha.com"
 

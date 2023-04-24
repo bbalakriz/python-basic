@@ -68,7 +68,7 @@ jobs:
 
     - name: Deploy gitops application in ArgoCD
       run: |
-        cd sample-python-basic-gitops/argo
+        cd python-basic-gitops/argo
         oc apply -f application-dev.yaml -n openshift-gitops
         
   deploy-in-staging:
@@ -102,5 +102,5 @@ jobs:
 
     - name: Deploy gitops application in ArgoCD
       run: |
-        cd sample-python-basic-gitops/argo
+        cd python-basic-gitops/argo
         oc apply -f application-staging.yaml -n openshift-gitops
